@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Parcela 2</title>
         <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
         <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
     </head>
@@ -11,7 +12,7 @@
         <a-scene>
             <a-assets>
               <!-- <a-asset-item id="house" src="assets/house.glb"></a-asset-item> -->
-              <img id="skyTexture" src="assets/IMG_20210712_082159_310.JPG">
+              <img id="skyTexture" src="assets/parcela2.jpg">
             </a-assets>
 
             <!-- <a-box color="red" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box> -->
@@ -20,8 +21,10 @@
             <!-- <a-light type="ambient" color="#445451"></a-light>
             <a-light type="point" intensity="2" position="2 4 4"></a-light> -->
 
-            <a-entity gltf-model="assets/house.glb" position="50 -5 -50" rotation="" scale="0.5 0.5 0.5" visible=""></a-entity>
-            <a-sky src="#skyTexture"></a-sky>
+            <!-- <a-entity gltf-model="assets/house.glb" position="50 -5 -50" rotation="" scale="0.5 0.5 0.5" visible=""></a-entity> -->
+
+            <a-sky src="#skyTexture" rotation="0 280 0"></a-sky>
+          
             
           </a-scene>
     </body>

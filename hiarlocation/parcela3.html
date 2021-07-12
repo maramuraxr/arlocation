@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Parcela 3</title>
+        <script src="js/aframe-master.js"></script>
+        <script src="js/components/aframe-tooltip-component.js"></script>
+        <script src="js/components/camera-position.js"></script>
+        <script src="js/components/link-controls.js"></script>
+        <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+        <script src="js/info-message.js"></script>
+    </head>
+
+    <body style="margin: 0; overflow: hidden;">
+        <a-scene
+        raycaster="far: 100; objects: [link];"
+        cursor="rayOrigin: mouse"
+        camera-position
+        info-message="htmlSrc: #messageText">
+            <a-assets>
+              <!-- <a-asset-item id="house" src="assets/house.glb"></a-asset-item> -->
+              <img id="skyTexture" src="assets/parcela3.jpg">
+            </a-assets>
+
+            <!-- <a-box color="red" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box> -->
+
+            <!-- <a-entity environment="preset: forest; dressingAmount: 500"></a-entity> -->
+            <!-- <a-light type="ambient" color="#445451"></a-light>
+            <a-light type="point" intensity="2" position="2 4 4"></a-light> -->
+
+            <!-- <a-entity gltf-model="assets/house.glb" position="50 -5 -50" rotation="" scale="0.5 0.5 0.5" visible=""></a-entity> -->
+
+            <a-sky src="#skyTexture" rotation="0 280 0"></a-sky>
+            <a-link href="parcela2.html"
+            title="Parcela 2"
+            image="assets/parcela2.jpg"
+            position="-10.5 1.5 1.7"
+            rotation="0 90 0"
+            ></a-link>
+            
+          </a-scene>
+    </body>
+</html>
