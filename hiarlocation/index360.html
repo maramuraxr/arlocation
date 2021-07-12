@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    </head>
+
+    <body style="margin: 0; overflow: hidden;">
+        <a-scene>
+            <a-assets>
+              <a-asset-item id="x-wing" src="assets/x-wing.glb"></a-asset-item>
+              <a-asset-item id="brain" src="assets/asset.glb"></a-asset-item>
+            </a-assets>
+
+            <!-- <a-entity environment="preset: forest; dressingAmount: 500"></a-entity> -->
+            <!-- <a-light type="ambient" color="#445451"></a-light>
+            <a-light type="point" intensity="2" position="2 4 4"></a-light> -->
+
+            <a-entity gltf-model="#x-wing" position="-0.31 -2 -10.15032" rotation="20 0 0" scale="2 2 2" visible=""></a-entity>
+            
+          </a-scene>
+    </body>
+</html>
