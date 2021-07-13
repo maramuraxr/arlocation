@@ -19,17 +19,15 @@
         camera-position
         info-message="htmlSrc: #messageText">
             <a-assets>
-              <!-- <a-asset-item id="house" src="assets/house.glb"></a-asset-item> -->
+             <a-asset-item id="house" src="assets/house.glb"></a-asset-item>
               <img id="skyTexture" src="assets/parcela3.jpg">
             </a-assets>
 
-            <!-- <a-box color="red" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box> -->
-
-            <!-- <a-entity environment="preset: forest; dressingAmount: 500"></a-entity> -->
+         
             <!-- <a-light type="ambient" color="#445451"></a-light>
             <a-light type="point" intensity="2" position="2 4 4"></a-light> -->
 
-            <!-- <a-entity gltf-model="assets/house.glb" position="50 -5 -50" rotation="" scale="0.5 0.5 0.5" visible=""></a-entity> -->
+            <a-entity gltf-model="#house" position="-10.5 -0.5 -110" rotation="0 90 0" scale="0.5 0.5 0.5" visible=""></a-entity>
 
             <a-sky src="#skyTexture" rotation="0 280 0"></a-sky>
             <a-link href="parcela2.html"
