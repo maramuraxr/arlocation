@@ -18,7 +18,8 @@
         camera-position>
             <a-assets>
              <a-asset-item id="house" src="assets/house.glb"></a-asset-item>
-              <img id="skyTexture" src="assets/parcela3.jpg">
+            <img id="skyTexture" src="assets/parcela3.jpg">
+            <img id="panel" src="assets/panel.jpg">
             </a-assets>
 
          
@@ -28,6 +29,9 @@
             <a-entity gltf-model="#house" position="-10.5 -0.5 -110" rotation="0 90 0" scale="0.5 0.5 0.5" visible=""></a-entity>
 
             <a-sky src="#skyTexture" rotation="0 280 0"></a-sky>
+
+            <a-image src="#panel" width="1.5" height="2" position="-9 1.1 -2.3" rotation="0 15 0"></a-image>
+
             <a-link href="parcela2.html"
             title="Parcela 2"
             image="assets/parcela2.jpg"

@@ -9,7 +9,6 @@
         <script src="js/components/camera-position.js"></script>
         <script src="js/components/link-controls.js"></script>
         <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
-        <script src="js/info-message.js"></script>
     </head>
 
     <body style="margin: 0; overflow: hidden;">
@@ -19,6 +18,7 @@
             <a-assets>
              <a-asset-item id="house" src="assets/house.glb"></a-asset-item>
               <img id="skyTexture" src="assets/parcela2.jpg">
+              <img id="panel" src="assets/panel.jpg">
             </a-assets>
 
 
@@ -29,6 +29,7 @@
             <a-entity gltf-model="#house" position="-10.5 -0.5 -118" rotation="0 90 0" scale="0.5 0.5 0.5" visible=""></a-entity>
 
             <a-sky src="#skyTexture" rotation="0 280 0"></a-sky>
+            <a-image src="#panel" width="1.5" height="2" position="-5.3 1.1 -5.3" rotation="0 0 0"></a-image>
             <a-link href="parcela1.html"
             title="Parcela 1"
             image="assets/parcela1.jpg"
