@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Parcela 3 s</title>
+        <title>Parcela 3</title>
         <script src="js/aframe-master.js"></script>
         <script src="js/components/aframe-tooltip-component.js"></script>
         <script src="js/components/camera-position.js"></script>
@@ -17,7 +17,7 @@
         cursor="rayOrigin: mouse"
         camera-position>
             <a-assets>
-             <a-asset-item id="house" src="assets/house.glb"></a-asset-item>
+             <a-asset-item id="house" src="assets/house5.glb"></a-asset-item>
             <img id="skyTexture" src="assets/parcela3.jpg">
             <img id="panel" src="assets/panel.jpg">
             </a-assets>
@@ -26,8 +26,10 @@
             <!-- <a-light type="ambient" color="#445451"></a-light>
             <a-light type="point" intensity="2" position="2 4 4"></a-light> -->
 
-            <a-entity gltf-model="#house" position="-10.5 -0.5 -110" rotation="0 90 0" scale="0.5 0.5 0.5" visible=""></a-entity>
+            <!-- <a-entity gltf-model="#house" position="-10.5 -0.5 -110" rotation="0 90 0" scale="0.5 0.5 0.5" visible=""></a-entity> -->
 
+            <a-entity gltf-model="#house" position="-10.5 -0.5 -72" rotation="0 95 0" scale="0.5 0.5 0.5" visible=""></a-entity>
+            
             <a-sky src="#skyTexture" rotation="0 280 0"></a-sky>
 
             <a-image src="#panel" width="1.5" height="2" position="-9 1.1 -2.3" rotation="0 15 0"></a-image>
