@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Parcela 3</title>
+        <title>Parcela 4</title>
         <script src="js/aframe-master.js"></script>
         <script src="js/components/aframe-tooltip-component.js"></script>
         <script src="js/components/camera-position.js"></script>
@@ -12,35 +12,36 @@
     </head>
 
     <body style="margin: 0; overflow: hidden;">
-        <a-scene
-        raycaster="far: 100; objects: [link];"
+        <a-scene raycaster="far: 100; objects: [link];"
         cursor="rayOrigin: mouse"
         camera-position>
             <a-assets>
              <a-asset-item id="house" src="assets/house5.glb"></a-asset-item>
-            <img id="skyTexture" src="assets/parcela3.jpg">
-            <img id="panel" src="assets/panel.jpg">
+              <img id="skyTexture" src="assets/IMG_20210712_082442_585.JPG">
+              <img id="panel" src="assets/panel.jpg">
             </a-assets>
 
-         
+
             <!-- <a-light type="ambient" color="#445451"></a-light>
             <a-light type="point" intensity="2" position="2 4 4"></a-light> -->
 
-            <!-- <a-entity gltf-model="#house" position="-10.5 -0.5 -110" rotation="0 90 0" scale="0.5 0.5 0.5" visible=""></a-entity> -->
+            
+            <!-- <a-entity gltf-model="#house" position="-10.5 -0.5 -118" rotation="0 90 0" scale="0.5 0.5 0.5" visible=""></a-entity> -->
 
             <a-entity gltf-model="#house" position="-10.5 -0.5 -72" rotation="0 95 0" scale="0.5 0.5 0.5" visible=""></a-entity>
             
             <a-sky src="#skyTexture" rotation="0 280 0"></a-sky>
 
             <a-image src="#panel" width="1.5" height="2" position="-9 1.1 -2.3" rotation="0 15 0"></a-image>
-
+          
             <a-link href="parcela2.html"
             title="Parcela 2"
             image="assets/parcela2.jpg"
             position="-10.5 1.5 1.7"
             rotation="0 90 0"
             ></a-link>
-            
+
+              
           </a-scene>
     </body>
 </html>
