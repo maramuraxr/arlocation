@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Realidad Aumentada Parcela 3</title>
+        <title>Edificio Realidad Aumentada</title>
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
@@ -19,8 +19,8 @@
         >
             <a-assets>
                 <a-asset-item
-                    id="house5"
-                    src="assets/house5.glb"
+                    id="edificio"
+                    src="assets/edificio.glb"
                 ></a-asset-item>
             </a-assets>
 
@@ -28,7 +28,7 @@
                 <a-entity
                     look-at="[gps-camera]"
                     animation-mixer="loop: repeat"
-                    gltf-model="#house5"
+                    gltf-model="#edificio"
                     scale="0.5 0.5 0.5"
                     position="0 0 0"
                     rotation="0 90 0"
