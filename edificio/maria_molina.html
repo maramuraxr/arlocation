@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Edificio</title>
+        <script src="js/aframe-master.js"></script>
+        <script src="js/components/aframe-tooltip-component.js"></script>
+        <script src="js/components/camera-position.js"></script>
+        <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+        <a-scene inspector="url: https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"></a-scene>
+    </head>
+
+    <body style="margin: 0; overflow: hidden;">
+        <a-scene inspector="url: https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"></a-scene>
+        <a-scene raycaster="far: 100; objects: [link];"
+        cursor="rayOrigin: mouse"
+        camera-position>
+            <a-assets>
+             <a-asset-item id="house" src="assets/maria_molina/maria_molina.glb"></a-asset-item>
+              <img id="skyTexture" src="assets/maria_molina/maria_molina.JPG">
+              <!-- <img id="panel" src="assets/panel.jpg"> -->
+            </a-assets>
+
+
+            <!-- <a-light type="ambient" color="#445451"></a-light>
+            <a-light type="point" intensity="2" position="2 4 4"></a-light> -->
+
+            
+            <a-entity gltf-model="#house" position="237.506 -7.183 -550" rotation="0 -41 0" scale="25 35.880 60" visible="true"></a-entity>
+
+            <!-- <a-entity gltf-model="#house" position="-10.5 -0.5 -72" rotation="0 95 0" scale="0.5 0.5 0.5" visible=""></a-entity> -->
+            
+            <a-sky src="#skyTexture" rotation="0 280 0" geometry="radius: 1000"></a-sky>
+
+            <!-- <a-image src="#panel" width="1.5" height="2" position="-9 1.1 -2.3" rotation="0 15 0"></a-image> -->
+          
+            <!-- <a-link href="parcela2.html"
+            title="Parcela 2"
+            image="assets/parcela2.jpg"
+            position="-10.5 1.5 1.7"
+            rotation="0 90 0"
+            ></a-link> -->
+
+              
+          </a-scene>
+    </body>
+</html>
